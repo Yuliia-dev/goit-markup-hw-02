@@ -1,0 +1,126 @@
+/* basic color #FFFFFF;
+button, link, web #2196F3;
+link calm : #212121;
+Studio: #000000;
+
+link active tel em #2196F3
+link calm tel em #757575
+h2 text  #212121;
+team background: #F5F4FA;
+background footer and hero #2F303A;
+address : #FFFFFF;
+footer tel em background: #FFFFFF99;
+
+*/
+
+/* :root {
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+} */
+.link {
+    text-decoration: none;
+}
+.list {
+    list-style: none;
+}
+/* Heder */
+.menu-link {
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: #212121;
+}
+.menu-link:hover,
+.menu-link:focus {
+    color: #2196F3;
+}
+.hookup-link{
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;   
+color: #757575;
+}
+.hookup-link:hover,
+.hookup-link:focus {
+    color: #2196F3
+}
+.logo {
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: #000000;
+}
+.half-logo {
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;  
+color: #2196F3;
+}
+.current {
+color: #2196F3;
+}
+/* Hero */
+.hero {
+    background-color: #2F303A;
+}
+.hero-text {
+font-family: 'Roboto', sans-serif;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.hero-button {
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+display: flex;
+text-align: center;
+align-items: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}
+/* Specifics */
+.preferens-titel {
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #212121;
+}
+.preferens-text {
+font-family: 'Roboto', sans-serif;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #757575;
+}
+.work-titel,
+.team {
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
