@@ -2,6 +2,7 @@
 :root {
 --accent-color:#2196F3 ;
 --secondary-color:  #212121;
+--text-color:  #FFFFFF;
 } 
 body {
 font-family: 'Roboto', sans-serif;
@@ -58,6 +59,10 @@ color: var(--accent-color);
 .menu-link.current {
 color: var(--accent-color);
 }
+.filter-btn.current {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
 
 
 /* Hero */
@@ -71,7 +76,7 @@ line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: #FFFFFF;
+color: var(--text-color);
 }
 .hero-button {
 text-align: center;
@@ -82,7 +87,7 @@ font-size: 16px;
 line-height: 1.87;
 align-items: center;
 letter-spacing: 0.06em;
-color: #FFFFFF;
+color: var(--text-color);
 background: var(--accent-color);
 cursor: pointer;
 }
@@ -144,7 +149,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: #FFFFFF;
+color: var(--text-color);
 }
 .address:hover,
 .address:focus {
@@ -156,7 +161,7 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;   
-color: #FFFFFF; 
+color: var(--text-color); 
 }
 
 
@@ -172,7 +177,7 @@ color:  var(--secondary-color);
 }
 .filter-btn:hover,
 .filter-btn:focus {
-color: #FFFFFF;
+color: var(--text-color);
 background-color: var(--accent-color);
 }
 .client-titel {
