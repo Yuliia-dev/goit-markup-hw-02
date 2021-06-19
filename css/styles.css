@@ -1,12 +1,19 @@
 
 :root {
---accent-color:#2196F3 ;
+--accent-color:  #2196F3 ;
 --secondary-color:  #212121;
---text-color:  #FFFFFF;
+--title-color:  #FFFFFF;
+--hero-color:  #2F303A;
+--text-color: #757575 ;
+--team-section-color: #F5F4FA;
+--half-logo-color: #000000;
 } 
 body {
 font-family: 'Roboto', sans-serif;
-color: #757575;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
 }
 .link {
 text-decoration: none;
@@ -17,7 +24,8 @@ list-style: none;
 
 
 /* Heder */
-.menu-link {
+.menu-link,
+.hookup-link {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -25,35 +33,27 @@ letter-spacing: 0.02em;
 color: var(--secondary-color);
 }
 .menu-link:hover,
-.menu-link:focus {
+.menu-link:focus,
+.hookup-link:hover,
+.hookup-link:focus 
+{
 color: var(--accent-color);
 }
 .hookup-link{
+ /* коли прописую font-style - inherit, чомусь наслідування не відбувається */   
 font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: #757575;
+color: var(--text-color);
 }
-.hookup-link:hover,
-.hookup-link:focus {
-    color: var(--accent-color);
-}
-.logo {
+
+.logo,
+.half-logo {
 font-family: 'Raleway', sans-serif;
-font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-color: #000000;
+color: var(--half-logo-color);
 }
-.half-logo {
-font-family: 'Raleway', sans-serif;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;  
+.half-logo {  
 color: var(--accent-color);
 }
 .menu-link.current {
@@ -61,13 +61,13 @@ color: var(--accent-color);
 }
 .filter-btn.current {
     background-color: var(--accent-color);
-    color: var(--text-color);
+    color: var(--title-color);
 }
 
 
 /* Hero */
 .hero {
-    background-color: #2F303A;
+    background-color: var(--hero-color);
 }
 .hero-text {
 font-weight: 900;
@@ -76,7 +76,7 @@ line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: var(--text-color);
+color: var(--title-color);
 }
 .hero-button {
 text-align: center;
@@ -87,69 +87,61 @@ font-size: 16px;
 line-height: 1.87;
 align-items: center;
 letter-spacing: 0.06em;
-color: var(--text-color);
+color: var(--title-color);
 background: var(--accent-color);
 cursor: pointer;
 }
 
 
 /* Specifics */
-.preferens-titel {
-font-weight: 700;
-font-size: 14px;
+.preference-title { 
 line-height: 1.14;
-letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--secondary-color);
 }
-.preferens-text {
-font-size: 14px;
+.preference-text {
+font-weight: 400;
 line-height: 1.71;
-letter-spacing: 0.03em;
+color: var(--text-color);
 }
-.work-titel,
+.work-title,
 .team {
-font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
-letter-spacing: 0.03em;
 color: var(--secondary-color);
 }
 
 
 /* Team */
 .team-section {
-background: #F5F4FA;
+background: var(--team-section-color);
 }
-.team-name {
+.team-name,
+.team-position {
 font-weight: 500;
 text-align: center;
 font-size: 16px;
 line-height: 1.18;
-letter-spacing: 0.03em;
 color: var(--secondary-color);
 }
 .team-position {
 font-weight: 400;
-text-align: center;
-font-size: 16px;
-line-height: 1.18;
-letter-spacing: 0.03em;
+color: var(--text-color);
 }
 
 
 /* Footer */
 .footer {
-background: #2F303A;
+background:var(--hero-color);
 }
 .address {
+ /* коли прописую  font-style - inherit, чомусь наслідування не відбувається */
 font-style: normal;
 font-weight: 400;
-font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: var(--text-color);
+color: var(--title-color);
 }
 .address:hover,
 .address:focus {
@@ -157,11 +149,10 @@ color:  var(--accent-color);
 }
 .footer-logo {
 font-family: 'Raleway', sans-serif;
-font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;   
-color: var(--text-color); 
+color: var(--title-color); 
 }
 
 
@@ -177,11 +168,10 @@ color:  var(--secondary-color);
 }
 .filter-btn:hover,
 .filter-btn:focus {
-color: var(--text-color);
+color: var(--title-color);
 background-color: var(--accent-color);
 }
-.client-titel {
-font-weight: 700;
+.client-title {
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
@@ -191,7 +181,6 @@ color: var(--secondary-color);
 font-weight: 400;
 font-size: 16px;
 line-height: 1.87;
-letter-spacing: 0.03em;  
-color: #757575;
+color: var(--text-color);
 }
 
